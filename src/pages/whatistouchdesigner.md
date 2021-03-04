@@ -1,7 +1,7 @@
 ---
 title: "What is TouchDesigner?"
 date: "2020-02-21"
-featuredImage: ../images/meinagano.jpg
+featuredImage: ../images/chairs.jpg
 ---
 
 My one true love, TouchDesigner, is a computer program that can be anything. You can script it, you can work it by hand, you can input many possible audio, video and data sources, and also output just as many. <br>

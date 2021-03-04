@@ -1,7 +1,7 @@
 ---
-title: "balancing the inverted pendulum"
+title: "bbblue + ros?"
 date: "2020-02-20"
-featuredImage: ../images/meinagano.jpg
+featuredImage: ../images/chairs.jpg
 ---
 
 ## a quick summary of what I learned in ECE 171A

@@ -1,7 +1,7 @@
 ---
 title: "metasite: about this website"
 date: "2021-02-20"
-featuredImage: ../images/meinagano.jpg
+featuredImage: ../images/chairs.jpg
 ---
 
 ## The motivation behind this website 
