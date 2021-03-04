@@ -1,0 +1,21 @@
+#loop {
+    animation: loop-anim 20s linear infinite;
+    white-space: nowrap;
+}
+
+#outer div {
+    display: inline-block;
+}
+
+#outer {
+    border: 5px solid white;
+}
+
+@keyframes loop-anim {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -50% /* This works because of the div between "outer" and "loop" */
+    }
+}
