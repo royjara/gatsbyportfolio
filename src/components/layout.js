@@ -1,5 +1,6 @@
 import React from "react"
-import { css, keyframes } from "@emotion/react"
+import styled from "@emotion/styled"
+import { css } from "@emotion/react"
 import { useStaticQuery, Link, graphql } from "gatsby";
 import Loopingtext from './loopingtext';
 
@@ -17,27 +18,21 @@ export default function Layout({ children }) {
         `
     )
 
-    // const bounce = keyframes`
-    //         from, 20%, 53%, 80%, to {
-    //           transform: translate3d(0,0,0);
-    //         }
-    //         40%, 43% {
-    //           transform: translate3d(0, -30px, 0);
-    //         }
-    //         70% {
-    //           transform: translate3d(0, -15px, 0);
-    //         }
-    //         90% {
-    //           transform: translate3d(0, -4px, 0);
-    //         }
-    // `
+    const Container = styled.div`
+    nax-width: 600px;
+    min-height: 100vh;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: cadetblue;
+    `
 
   return (
+    <Container>
     <div
       css={css`
-        background-color: pink;
         max-width: 100%;
-        max-height: 100%;
         padding: ${rhythm(2)};
       `}
     >
@@ -67,5 +62,6 @@ export default function Layout({ children }) {
       </Link>
       {children}
     </div>
+    </Container>
   )
 }

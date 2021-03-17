@@ -5,12 +5,13 @@ import { css } from "@emotion/react"
 import Layout from "../components/layout"
 
 export default function Home({ data }) {
-  console.log(data)
+  // console.log(data)
   return (
     <Layout>
       <div      
         css = {css`
-        background-color: teal;
+        background-color: gray;
+        height: 100%;
         padding: 10% 5%;
         `}
       >
