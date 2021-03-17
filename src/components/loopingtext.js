@@ -15,7 +15,7 @@ export default function Loopingtext() {
             
             {/* <!-- This div is important! It lets us specify margin-left as percentage later on. --> */}
             <div>
-                <div id="loop"><div id="content">looping text on top&nbsp;</div></div>
+                <div id="loop"><div id="content">text with questionble purpose&nbsp;</div></div>
             </div>
         </div>
     )

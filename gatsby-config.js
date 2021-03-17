@@ -6,8 +6,8 @@
 
 module.exports = {
   siteMetadata: {
-    title: `ROY JARA`,
-    description: `A simple site to journal and show off my work`,
+    title: `ROYJARA`,
+    description: `simple site to journal and show off work`,
     author: `roy jara`,
   },
   plugins: [
