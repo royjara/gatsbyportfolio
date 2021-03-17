@@ -67,3 +67,10 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# markdown files
+src/pages/*
+!src/pages/about.js
+!src/pages/index.js
+!src/pages/installation.md
+!src/pages/my-files.md
