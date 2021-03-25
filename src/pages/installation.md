@@ -77,6 +77,8 @@ The current main bug is that you need to include a featured image for every mark
 
 I will continue working on the template and later with git you will be able to get my updates. I will try to remove any hardcoded data in the template, so that in the future you can just get the updates without worrying about any data or style that might get overwritten. <br>
 
+Please send me your suggestions for any extra features you want. Also, share any bugs with me so that I can fix them.
+
 lmk if you have any questions or need any help.
 
 cheers,

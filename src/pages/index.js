@@ -1,87 +1,30 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
-import { css } from "@emotion/react"
-// import { rhythm } from "../utils/typography"
-import Layout from "../components/layout"
+// INDEX/HOMEPAGE : 
 
-export default function Home({ data }) {
-  // console.log(data)
+//       Make big bright y2k title for both desktop & mobile
+// overlay footer - scroll down
+
+import React from "react"
+import { css } from "@emotion/react"
+import FullscreenLayout from "../components/fullscreenlayout"
+
+export default function Home() {
   return (
-    <Layout>
-      <div      
+    <div>
+      <h1
         css = {css`
-        background-color: gray;
-        height: 100%;
-        padding: 10% 5%;
+        font-family: 'Helvetica';
+        font-weight: normal;
+        font-size: 25.5vw;
+        letter-spacing: -2vw;
+        text-align: center;
+        min-height: 100vh;
+        line-height: 33vh;
+        color: orange
         `}
-      >
-        <h1
-          css={css`
-            display: inline-block;
-            border-bottom: 1px solid;
-            border-left: 1px solid;
-            font-family: 'Archivo Narrow', sans-serif;
-            letter-spacing: -3px;
-          `}
-        >
-          {data.site.siteMetadata.description}
-        </h1>
-        <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div key={node.id}>
-            <Link
-              to={node.fields.slug}
-              css={css`
-                text-decoration: none;
-                color: inherit;
-              `}
-            >
-              <h3
-                css={css`
-                  margin-bottom: #{rhythm(1 / 4)};
-                `}
-              >
-                {node.frontmatter.title}{""}
-                <span
-                  css={css`
-                    color: #bbb;
-                  `}
-                >
-                  - {node.frontmatter.date}
-                </span>
-              </h3>
-              <p>{node.excerpt}</p>
-            </Link>
-          </div>
-        ))}
-      </div>
-    </Layout>
+        >TENSE SALT NATION
+      </h1>
+      <FullscreenLayout />
+    </div>
+    
   )
 }
-
-export const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-        description
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC}) {
-      totalCount
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            date(formatString: "DD MMMM, YYYY")
-          }
-          fields {
-            slug
-          }
-          excerpt
-        }
-      }
-    }
-  }
-`

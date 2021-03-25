@@ -15,7 +15,13 @@
     0% {
         margin-left: 0;
     }
+    33% {
+        margin-left: -25%; /* This works because of the div between "outer" and "loop" */
+    }
+    66% {
+        margin-left: 25%;
+    }
     100% {
-        margin-left: -50% /* This works because of the div between "outer" and "loop" */
+        margin-left: 0;
     }
 }

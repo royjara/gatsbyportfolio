@@ -6,9 +6,9 @@
 
 module.exports = {
   siteMetadata: {
-    title: `ROYJARA`,
-    description: `simple site to journal and show off work`,
-    author: `roy jara`,
+    title: `TENSE SALT WORLDWIDE`,
+    description: `ROY JARA PORTFOLIO`,
+    author: `Roy Jara`,
   },
   plugins: [
     {

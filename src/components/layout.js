@@ -1,5 +1,16 @@
+/*  GENERIC LAYOUT:
+
+TODO: STICK BUTTONS INTO loopingtext RECTANGLE
+
+Component that:
+- displays <loopingtext />
+- displays title ("TENSE SALT WORLDWIDE") + link to "/"
+- displays links to Blog + About
+- displays {children}
+
+*/  
+
 import React from "react"
-import styled from "@emotion/styled"
 import { css } from "@emotion/react"
 import { useStaticQuery, Link, graphql } from "gatsby";
 import Loopingtext from './loopingtext';
@@ -18,50 +29,31 @@ export default function Layout({ children }) {
         `
     )
 
-    const Container = styled.div`
-    nax-width: 600px;
-    min-height: 100vh;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: cadetblue;
-    `
-
   return (
-    <Container>
     <div
       css={css`
         max-width: 100%;
-        padding: ${rhythm(2)};
+        padding-right: ${rhythm(1)};
+        padding-left: ${rhythm(1)};
       `}
     >
       <Loopingtext />
+      
       <Link to={`/`}>
         <h3
           css={css`
             margin-bottom: ${rhythm(2)};
             display: inline-block;
-            font-family: 'helvetica', sans-serif;
+            font-family: 'helvetica', sans-serif, bold;
             padding: 2%;
             font-size: 50px;
+            letter-spacing: -5px;
           `}
         >
           {data.site.siteMetadata.title}
         </h3>
       </Link>
-      <Link
-        to={`/about/`}
-        css={css`
-          float: right;
-          padding: 2%;
-          color: black;
-        `}
-      >
-        About
-      </Link>
       {children}
     </div>
-    </Container>
   )
 }
