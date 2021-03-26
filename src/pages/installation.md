@@ -1,7 +1,9 @@
 ---
-title: "example post aka installation instructions"
+title: "Installation Instructions"
 date: "2021-03-16"
 featuredImage: ../images/chairs.jpg
+blogstyle: "3"
+description: "Overview+guide to start developing a similar website "
 ---
 <br>
 

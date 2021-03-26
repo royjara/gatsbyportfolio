@@ -26,39 +26,40 @@ export default function FullscreenLayout() {
         css={css`font-family: 'Fira sans'; float: left;  color: black;`}
       >Roy Jara</h3>
       <Link
-        to={`/about/`}
+        to={`/music/`}
         css={css`float: right; 
         display: inline-block; 
-        min-width: 6vw;  
+        min-width: 6vw; 
         color: black;
         text-align: center;
+        margin-right:2%; 
         `}
       >
-        About
+        Music
       </Link>
       <Link
         to={`/blog/`}
         css={css`float: right; 
         display: inline-block; 
         min-width: 6vw; 
-        margin-right:2%; 
         color: black;
         text-align: center;
+        margin-right:2%; 
         `}
       >
         Blog
       </Link>
       <Link
-        to={`/music/`}
+        to={`/about/`}
         css={css`float: right; 
         display: inline-block; 
-        min-width: 6vw; 
-        margin-right:2%; 
+        min-width: 6vw;  
         color: black;
         text-align: center;
+        margin-right:2%; 
         `}
       >
-        Music
+        About
       </Link>
     </div>
   )

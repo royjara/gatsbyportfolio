@@ -42,12 +42,12 @@ export default function Layout({ children }) {
       <Link to={`/`}>
         <h3
           css={css`
-            margin-bottom: ${rhythm(2)};
-            display: inline-block;
-            font-family: 'helvetica', sans-serif, bold;
-            padding: 2%;
+
+            font-family: 'helvetica';
+            padding-top: 2%;
             font-size: 50px;
             letter-spacing: -5px;
+            text-align: center;
           `}
         >
           {data.site.siteMetadata.title}

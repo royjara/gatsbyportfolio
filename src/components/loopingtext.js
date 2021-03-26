@@ -18,6 +18,29 @@ export default function Loopingtext() {
                 <div id="loop"><div id="content">roy jara&nbsp;</div></div>
             </div>
                 <Link
+                    to={`/music/`}
+                    css={css`float: right; 
+                    display: inline-block; 
+                    min-width: 6vw; 
+                    color: black;
+                    text-align: center;
+                    margin-right:2%; 
+                `}>
+                    Music
+                </Link>
+                <Link
+                    to={`/blog/`}
+                    css={css`float: right; 
+                    display: inline-block; 
+                    min-width: 6vw; 
+                    color: black;
+                    text-align: center;
+                    margin-right:2%; 
+                    `}
+                >
+                    Blog
+                </Link>
+                <Link
                     to={`/about/`}
                     css={css`float: right; 
                     display: inline-block; 
@@ -27,29 +50,6 @@ export default function Loopingtext() {
                     text-align: center;`}
                 >
                     About
-                </Link>
-                <Link
-                    to={`/blog/`}
-                    css={css`float: right; 
-                    display: inline-block; 
-                    min-width: 6vw; 
-                    margin-right:2%; 
-                    color: black;
-                    text-align: center;
-                    `}
-                >
-                    Blog
-                </Link>
-                <Link
-                    to={`/music/`}
-                    css={css`float: right; 
-                    display: inline-block; 
-                    min-width: 6vw; 
-                    margin-right:2%; 
-                    color: black;
-                    text-align: center;`}
-                >
-                    Music
                 </Link>
         </div>
     )

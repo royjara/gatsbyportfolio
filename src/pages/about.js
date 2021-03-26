@@ -1,14 +1,12 @@
 import React from "react"
-import {graphql} from 'gatsby'
 import Layout from "../components/layout"
 import { css } from "@emotion/react"
 
-export default function About({ data }) {
+export default function About() {
   return (
     <Layout>
           <h1
           css={css`
-
             border-bottom: 1px solid;
             border-left: 1px solid;
             font-family: 'Archivo Narrow', sans-serif;
@@ -17,20 +15,31 @@ export default function About({ data }) {
         >
           About
         </h1>
+      <p
+      css={css`
+        text-align: center;
+
+      `}>
+        Electrical engineer, creative technologist.
+      </p>
+      <h3>
+        Skills
+      </h3>
       <p>
-        We're the only site running on your computer dedicated to showing the
-        best photos and videos of pandas eating lots of food.
+        Electrical engineer, creative technologist.
+      </p>
+      <h3>
+        Professional Experience
+      </h3>
+      <p>
+        Electrical engineer, creative technologist.
+      </p>
+      <h3>
+        Research Experience
+      </h3>
+      <p>
+        Electrical engineer, creative technologist.
       </p>
     </Layout>
   )
 }
-
-export const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
