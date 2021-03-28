@@ -14,9 +14,11 @@ export default function Loopingtext() {
         <div id="outer">
             
             {/* <!-- This div is important! It lets us specify margin-left as percentage later on. --> */}
+            <Link to={`/`}>
             <div>
                 <div id="loop"><div id="content">roy jara&nbsp;</div></div>
             </div>
+            </Link>
                 <Link
                     to={`/music/`}
                     css={css`float: right; 

@@ -33,16 +33,16 @@ Stack of technologies in this specific project: <br>
 **2. Copy example project from github**<br>
 -- Open vscode <br>
 -- open a terminal console <br>
-<img src="../images/open_terminal.PNG"></img>
+<img src="../images/installation/open_terminal.PNG"></img>
 -- enter > mkdir "name of a folder where you want to copy project files"<br>
 *note: mkdir is short for make directory*
-<img src="../images/mkdir.png"></img>
+<img src="../images/installation/mkdir.png"></img>
 -- enter > cd testfolder <br>
 *note: cd is short for change directory* <br>
-<img src="../images/cdtestfolder.PNG"></img>
+<img src="../images/installation/cdtestfolder.PNG"></img>
 -- enter > git clone https://github.com/royjara/gatsbyportfolio.git <br>
 *- if this doesnt work, try using bash instead of powershell: https://stackoverflow.com/questions/42606837/how-do-i-use-bash-on-windows-from-the-visual-studio-code-integrated-terminal*
-<img src="../images/cdandgitclone.PNG"></img>
+<img src="../images/installation/cdandgitclone.PNG"></img>
 
 
 **3. Use node to install every other thing that's needed to run project**<br>
@@ -57,6 +57,12 @@ Stack of technologies in this specific project: <br>
 
 **5. Publishing the website with surge**<br>
 -- Detailed instructions: https://www.gatsbyjs.com/docs/deploying-to-surge/ <br>
+
+
+**6. updating the git repo**<br>
+-- So whenever i push changes to the repository (the project that lives in https://github.com/royjara/gatsbyportfolio.git), you just have to enter "git pull" on the root of your project. 
+<img src="../images/installation/gitpull.png"></img>
+
 
 ---
 

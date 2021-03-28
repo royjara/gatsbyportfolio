@@ -1,16 +1,21 @@
 import React from "react"
 import Layout from "../components/layout"
 import { css } from "@emotion/react"
+import decoimage from "../images/decorations/about_deco.gif";
+
 
 export default function About() {
   return (
     <Layout>
           <h1
           css={css`
-            border-bottom: 1px solid;
-            border-left: 1px solid;
             font-family: 'Archivo Narrow', sans-serif;
             letter-spacing: -3px;
+            text-align: left;
+            background: url(${decoimage});
+            background-size: cover;
+            color: white;
+            padding: 2%;
           `}
         >
           About

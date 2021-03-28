@@ -20,7 +20,10 @@ export default function FullscreenLayout() {
   return (
 
     <div
-      css={css`max-width: 100%; padding: ${rhythm(2)};`}
+      css={css`width: 100%; 
+      padding: ${rhythm(2)};
+      position:absolute;
+      bottom:0;`}
     >
       <h3
         css={css`font-family: 'Fira sans'; float: left;  color: black;`}

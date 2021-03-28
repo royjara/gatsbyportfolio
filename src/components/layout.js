@@ -38,21 +38,6 @@ export default function Layout({ children }) {
       `}
     >
       <Loopingtext />
-      
-      <Link to={`/`}>
-        <h3
-          css={css`
-
-            font-family: 'helvetica';
-            padding-top: 2%;
-            font-size: 50px;
-            letter-spacing: -5px;
-            text-align: center;
-          `}
-        >
-          {data.site.siteMetadata.title}
-        </h3>
-      </Link>
       {children}
     </div>
   )
