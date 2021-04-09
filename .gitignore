@@ -72,5 +72,6 @@ yarn-error.log
 src/pages/*
 !src/pages/about.js
 !src/pages/index.js
+!src/pages/blog.js
 !src/pages/installation.md
 !src/pages/my-files.md
